@@ -1,0 +1,27 @@
+{
+	"name": "@uint42/webwriter-invalid-formatting-repro",
+	"version": "0.0.1",
+	"keywords": [
+		"webwriter-widget"
+	],
+	"license": "MIT",
+	"author": "",
+	"scripts": {
+		"prepublishOnly": "npx @webwriter/build",
+		"dev": "npx @webwriter/build dev",
+		"localize": "lit-localize extract && npx @webwriter/build localize && lit-localize build"
+	},
+	"dependencies": {
+		"lit": "^3",
+		"@webwriter/lit": "^2"
+	},
+	"devDependencies": {
+		"@lit/localize-tools": "^0.8"
+	},
+	"exports": {
+		"./widgets/uint42-webwriter-invalid-formatting-repro.*": {
+			"source": "./widgets/uint42-webwriter-invalid-formatting-repro.ts",
+			"default": "./dist/widgets/uint42-webwriter-invalid-formatting-repro.*"
+		}
+	}
+}
